@@ -27,7 +27,7 @@ export default function Navbar() {
   ]
 
   const accountLinks = [
-    { href: '/profile', label: 'Profile', icon: User },
+    { href: '/dashboard', label: 'dashboard', icon: User },
     { href: '/orders', label: 'Orders', icon: ShoppingBag },
     { href: '/wishlist', label: 'Wishlist', icon: Heart },
     { href: '/logout', label: 'Logout', icon: LogOut },

@@ -10,7 +10,21 @@ const inter = Black_Ops_One({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: "Squirtle BattleBase",
-  description: "Welcome to the Game Sites Directory! Discover and explore tactical airsoft and game sites near you. Our platform offers detailed site reviews, ratings, and descriptions to help you find the best places to play. Filter by location, rating, and site type to tailor your search, and use our interactive map to pinpoint your next adventure. Stay informed with the latest updates on airsoft gear and site news."
+  description: "Welcome to the Game Sites Directory!",
+  openGraph: {
+    title: "Squirtle BattleBase",
+    description: "Explore tactical airsoft and game sites.",
+    url: "https://squirtlebb.co.uk",
+    siteName: "Squirtle BattleBase",
+    images: [
+      {
+        url: "https://utfs.io/path/to/your/image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Squirtle BattleBase Image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
