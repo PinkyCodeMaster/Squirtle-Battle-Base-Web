@@ -135,7 +135,7 @@ export default function ProductDetailPage() {
                         We offer free shipping on all orders over $100. Standard shipping typically takes 3-5 business days.
                     </p>
                     <p>
-                        If you're not satisfied with your purchase, you can return the item within 30 days of delivery for a full refund.
+                        If you&apos;re not satisfied with your purchase, you can return the item within 30 days of delivery for a full refund.
                         Please note that the item must be unused and in its original packaging.
                     </p>
                 </TabsContent>

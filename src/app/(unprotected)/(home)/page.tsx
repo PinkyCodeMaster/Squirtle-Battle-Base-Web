@@ -212,7 +212,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "John D.", quote: "Squirtle Battle Base has revolutionized how I buy and sell tactical gear. The community is fantastic!", imageURl: 'https://utfs.io/f/a74a118f-b823-475b-8c96-6fd75ae5b3b1-cx9vf7.jpg' },
-              { name: "Sarah M.", quote: "I love the Game Sites Map feature. It's made finding new airsoft locations so much easier.", imageURl: 'https://utfs.io/f/a74a118f-b823-475b-8c96-6fd75ae5b3b1-cx9vf7.jpg' },
+              { name: "Sarah M.", quote: "I love the Game Sites Map feature. It&apos;s made finding new airsoft locations so much easier.", imageURl: 'https://utfs.io/f/a74a118f-b823-475b-8c96-6fd75ae5b3b1-cx9vf7.jpg' },
               { name: "Mike R.", quote: "The user reviews have helped me make informed decisions about my gear purchases. Great platform!", imageURl: 'https://utfs.io/f/a74a118f-b823-475b-8c96-6fd75ae5b3b1-cx9vf7.jpg' },
             ].map((testimonial, index) => (
               <Card key={index}>
