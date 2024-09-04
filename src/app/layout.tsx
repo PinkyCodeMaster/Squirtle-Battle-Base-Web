@@ -1,8 +1,9 @@
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Black_Ops_One } from "next/font/google";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Black_Ops_One({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
-  );
+
+  )
 }
