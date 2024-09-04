@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Black_Ops_One } from "next/font/google";
 import type { Metadata } from "next";
 import "@/styles/globals.css";
+import Navbar from "@/components/navigation/site-header";
 
 const inter = Black_Ops_One({ subsets: ["latin"], weight: ['400'] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
           <Analytics />
           <SpeedInsights />

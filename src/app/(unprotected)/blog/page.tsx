@@ -1,7 +1,7 @@
 'use client'
 
+import HeroSection from "@/components/hero/hero-section-blog";
 import BlogPostCard from "@/components/blog/blog-post-card";
-import HeroSection from "@/components/hero/hero-section";
 import ReviewCard from "@/components/blog/review-card";
 import BuildCard from "@/components/blog/build-card";
 import { Button } from "@/components/ui/button";
@@ -50,7 +50,7 @@ export default function BlogAndReviewsPage() {
             {/* Recent Blog Posts Section */}
             <section className="py-12">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-6">Latest Articles</h2>
+                    <h2 className="text-3xl text-black font-bold mb-6">Latest Articles</h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {[...Array(6)].map((_, index) => (
                             <BlogPostCard key={index} />
